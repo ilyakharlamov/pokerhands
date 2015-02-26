@@ -1,0 +1,13 @@
+./src/com/ilyakharlamov/pockerhands/core/Card.java
+./src/com/ilyakharlamov/pockerhands/core/Hand.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRank.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankFlush.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankFourOfAKind.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankFullHouse.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankHigh.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankPair.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankStraight.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankStraightFlush.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankThreeOfAKind.java
+./src/com/ilyakharlamov/pockerhands/core/handrank/HandRankTwoPairs.java
+./src/com/ilyakharlamov/pockerhands/Standalone.java

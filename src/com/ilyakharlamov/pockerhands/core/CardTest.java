@@ -6,11 +6,22 @@ import org.junit.Test;
 
 public class CardTest {
 	@Test
+	public void constructorFromString() {
+		Card _5dv1 = Card.fromString("5D");
+		Card _5dv2 = new Card(Card.Rank.FIVE, Card.Suit.DIAMONDS);
+		assertEquals("constructor from string", _5dv1, _5dv2);
+	}
+	@Test
+	public void constructorFromStringAll() {
+		assertNotNull("constructor from string", Card.fromString("AS").getSuit());
+		assertNotNull("constructor from string", Card.fromString("AD").getSuit());
+	}
+	@Test
 	public void compareSameCard() {
 		Card _5dv1 = new Card(Card.Rank.FIVE, Card.Suit.DIAMONDS);
 		Card _5dv2 = new Card(Card.Rank.FIVE, Card.Suit.DIAMONDS);
 		assertFalse("ref is different", _5dv1==_5dv2);
-		assertFalse("comparison the same", _5dv1.equals(_5dv2));
+		assertTrue("comparison the same", _5dv1.equals(_5dv2));
 	}
 	@Test
 	public void compareSameSuit() {

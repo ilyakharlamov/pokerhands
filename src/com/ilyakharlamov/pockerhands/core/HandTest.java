@@ -9,9 +9,15 @@ public class HandTest {
 	@Test
 	public void testIfHandWorks() {
 		Hand hand = new Hand();
-		assertEquals("empty hand", hand.getCards().size(), 0);
+		assertTrue("empty hand", hand.isEmpty());
+		assertTrue("get is empty", hand.getCards().length==0);
 		hand.addCard(new Card(Card.Rank.TWO,Card.Suit.CLUBS));
-		assertEquals("hand add one", hand.getCards().size(), 1);
+		assertTrue("hand add one", hand.getCards()[0]!=null);
+	}
+	@Test
+	public void testHandFromStr() {
+		Hand hand = new Hand("2D3S");
+		assertEquals(2,hand.getCards().length);
 	}
 
 }
